@@ -1,0 +1,29 @@
+\documentclass[12pt]{report}
+\begin{document}
+
+\begin{center}
+\huge{Programming Assignment 2 Report}
+\large{Chinmay Mathakari-02007302}
+\end{center}
+
+\section{Issues faced:}
+1.	When I was updating my previous code, I had trouble changing the background color and keeping it within the frame. Despite trying to use "clear" and "clearColor()", I couldn't get them to work properly.\\
+2.	Additionally, I encountered an issue when trying to implement a pause condition. The parameter "red" was not found when using "gl.uniform1f(r, red)". After spending time trying to fix it, I ultimately decided not to use the "if" condition.\\
+3.	While working on the assignment, I faced an unusual error where the rendered triangle was not displayed and there were no error messages in the console. However, after debugging the code, I discovered a warning message that reads GLINVALIDVALUE : glDrawArrays:count is less than 0.This error was caused by a condition I had written in the JavaScript file, and I was able to fix it by removing that from the code.
+
+\section{Lessons learned: }
+1.	Through my experience, I have gained knowledge on utilizing various WebGL functions such as clear (), clearColor(), setTimeout(), render(), and requestAnimFrame().\\
+2.	While working with WebGL, I have observed that decreasing the delay time in the setTimeout () function results in faster rendering.\\
+3.	I have learned that using requestAnimFrame() instead of a basic setInterval() or setTimeout() loop offers a significant advantage. By synchronizing the animation with the browser's repaint cycle, prevents unnecessary calculations or rendering when the browser is busy with other tasks, resulting in smoother and more efficient animations. In essence, requestAnimFrame() optimizes the animation's performance by aligning it with the browser's activity.
+
+\section{Remaining bugs:} 
+
+1.	My homework assignment code is running flawlessly and I have incorporated several interactive features such as a slider for animation speed, the ability to change the number of points, viewport, and color through a dropdown menu or text box input. Additionally, there is a status display that updates with the current view.\\
+2.	I am currently enhancing the program's functionality by implementing a feature to change the background color based on certain conditions and to randomly select colors when the pause button is pressed.\\
+3.	Additionally, the user interface could benefit from some enhancements and my intention is to utilize Bootstrap and CSS to improve the design.
+
+\section{Extra functionality implemented:}
+
+1.  I have successfully implemented the play and pause functionality along with changing X and Y Positions in the code.
+
+\end{document}
